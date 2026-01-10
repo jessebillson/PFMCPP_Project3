@@ -428,6 +428,9 @@ MOVE THEM to the space below this block comment and put them in numerical order
     I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
     simply CUT and PASTE them in the space provided below:
 */
+
+struct gym
+{
 /*
     Thing 1) gym
     5 properties: 
@@ -441,10 +444,10 @@ MOVE THEM to the space below this block comment and put them in numerical order
         2) burn calories
         3) build muscle
 */
-struct gym
-{
-
 };
+
+struct groceryStore
+{
 /*
     Thing 2) grocery store
     5 properties:
@@ -458,10 +461,10 @@ struct gym
         2) sell alcohol
         3) give free samples
 */
-struct groceryStore
-{
-
 };
+
+struct countyFair
+{
 /*
     Thing 3) county fair
     5 properties:
@@ -475,10 +478,10 @@ struct groceryStore
         2) create memories
         3) showcase uncommon animals
 */
-struct countyFair
-{
-
 };
+
+struct arcade
+{
 /*
     Thing 4) arcade
     5 properties:
@@ -492,10 +495,10 @@ struct countyFair
         2) sell food and beverage
         3) cause motion sickness
 */
-struct arcade
-{
-
 };
+
+struct keyboard
+{
 /*
    Thing 5) keyboard
    5 properties:
@@ -509,10 +512,10 @@ struct arcade
        2) raise computer volume
        3) raise and dim the screen brightnes
 */
-struct keyboard
-{
-
 };
+
+struct trackPad
+{
 /*
    Thing 6) trackpad
    5 properties:
@@ -526,10 +529,10 @@ struct keyboard
        2) track physical movement when touched
        3) scroll the screen 
 */
-struct trackPad
-{
-
 };
+
+struct computerScreen
+{
 /*
    Thing 7) screen
    5 properties:
@@ -543,27 +546,27 @@ struct trackPad
        2) display text
        3) generate heat
 */
-struct computerScreen
-{
-
 };
-/*
-   Thing 8) charger
-   5 properties:
-       1) name of input type (std::string)
-       2) speed of charging (float)
-       3) input voltage (float)
-       4) length of cord (float)
-       5) amount of wattage required to run (float)
-   3 things it can do:
-       1) charge laptop
-       2) charge phone
-       3) explode
-*/
+
 struct computerCharger
 {
-    
+    /*
+       Thing 8) charger
+       5 properties:
+           1) name of input type (std::string)
+           2) speed of charging (float)
+           3) input voltage (float)
+           4) length of cord (float)
+           5) amount of wattage required to run (float)
+       3 things it can do:
+           1) charge laptop
+           2) charge phone
+           3) explode
+    */
 };
+
+struct externalHardDrive
+{
 /*
    Thing 9) external hard drive
    5 properties:
@@ -577,10 +580,10 @@ struct computerCharger
        2) transfer data
        3) use energy
 */
-struct externalHardDrive
-{
-
 };
+
+struct laptop
+{
 /*
    Thing 10) laptop
    5 properties:
@@ -594,9 +597,6 @@ struct externalHardDrive
        2) run applications
        3) connect to the internet
 */
-struct laptop
-{
-
 };
 /*
 =================
