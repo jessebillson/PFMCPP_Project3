@@ -431,172 +431,202 @@ MOVE THEM to the space below this block comment and put them in numerical order
 
 struct gym
 {
-/*
-    Thing 1) gym
-    5 properties: 
-        1) number of employees (int)
-        2) amount of treadmills (int)
-        3) number of daily classes (int)
-        4) number of clients (int)
-        5) range of weights (int)
-    3 things it can do:
-        1) make money
-        2) burn calories
-        3) build muscle
-*/
+//Thing 1) gym
+//5 properties: 
+    //1) number of employees (int)
+    int numEmployees = 12;
+    //2) amount of treadmills (int)
+    int numTreadmills = 10;
+    //3) number of daily classes (int)
+    int numDailyClasses = 16;
+    //4) number of clients (int)
+    int numClient = 116;
+    //5) range of weights (int)
+    int rangeOfWeight = 100; //I actually can't think of a way to represent this in one line. so the range is 100.
+//3 things it can do:
+    //1) make money
+    //2) burn calories
+    //3) build muscle
 };
 
 struct groceryStore
 {
-/*
-    Thing 2) grocery store
-    5 properties:
-        1) amount of produce (float)
-        2) number of registers (int)
-        3) number of carts (int)
-        4) number of employees (int)
-        5) number of doors (int)
-    3 things it can do:
-        1) sell food
-        2) sell alcohol
-        3) give free samples
-*/
+//Thing 2) grocery store
+//5 properties:
+    //1) amount of produce (float)
+    float amountOfProduceInLbs = 813.4f;
+    //2) number of registers (int)
+    float numRegisters = 12;
+    //3) number of carts (int)
+    int numCart = 70;
+    //4) number of employees (int)
+    int numEmployees = 50;
+    //5) number of doors (int)
+    int numDoors = 4;
+//3 things it can do:
+    //1) sell food
+    //2) sell alcohol
+    //3) give free samples
 };
 
 struct countyFair
 {
-/*
-    Thing 3) county fair
-    5 properties:
-        1) number of rides (int)
-        2) number of food vendors (int)
-        3) number of attendees (int)
-        4) number of games (int)
-        5) location (std::string)
-    3 things it can do:
-        1) entertain a large group of people
-        2) create memories
-        3) showcase uncommon animals
-*/
+//Thing 3) county fair
+//5 properties:
+    //1) number of rides (int)
+    int numRides = 16;
+    //2) number of food vendors (int)
+    int numFoodVendors = 14;
+    //3) number of attendees (int)
+    int numAttendees = 2000;
+    //4) number of games (int)
+    int numGames = 30;
+    //5) location (std::string)
+    std::string location = "Orange County Fairgrounds";
+//3 things it can do:
+    //1) entertain a large group of people
+    //2) create memories
+    //3) showcase uncommon animals
 };
 
 struct arcade
 {
-/*
-    Thing 4) arcade
-    5 properties:
-        1) number of games (int)
-        2) number of credits paid per game (float)
-        3) number of customers (int)
-        4) hours of operation (int)
-        5) cost of wear and tear (float)
-    3 things it can do:
-        1) create entertainment
-        2) sell food and beverage
-        3) cause motion sickness
-*/
+//Thing 4) arcade
+//5 properties:
+    //1) number of games (int)
+    int numGames = 33;
+    //2) number of credits paid per game (float)
+    float numCreditsToPlayGame = 7.5f;
+    //3) number of customers (int)
+    int numCustomers = 90;
+    //4) hours of operation (int)
+    int hoursOfOperation = 0800; //military opening time. I couldn't think of a way to represent open and closing times in one line
+    //5) annual cost of wear and tear in USD (float)
+    float annualCostOfWearAndTear = 7658.79f;
+//3 things it can do:
+    //1) create entertainment
+    //2) sell food and beverage
+    //3) cause motion sickness
 };
 
 struct keyboard
 {
-/*
-   Thing 5) keyboard
-   5 properties:
-       1) number of keys (int)
-       2) depth of keys (float)
-       3) width of keyboard (float)
-       4) amount of noise made per key press in dB (float)
-       5) number of special keys (int)
-   3 things it can do:
-       1) type letters
-       2) raise computer volume
-       3) raise and dim the screen brightnes
-*/
+//Thing 5) keyboard
+//5 properties:
+   //1) number of keys (int)
+    int numKeys = 104;
+   //2) depth of keys in millimeters (float)
+    float depthOfKeysInMm = 1.09f;
+   //3) width of keyboard in inches (float)
+    float widthOfKeyboardInInches = 11.75f
+   //4) amount of noise made per key press in dB (float)
+    float volumeOfKeyPressedInDb = 32.2;
+   //5) number of special keys (int)
+    int numSpecialKeys = 13;
+//3 things it can do:
+   //1) type letters
+   //2) raise computer volume
+   //3) raise and dim the screen brightnes
 };
 
 struct trackPad
 {
-/*
-   Thing 6) trackpad
-   5 properties:
-       1) number of buttons (int)
-       2) width of trackpad (float)
-       3) sensitivity of trackpad (double)
-       4) color of trackpad (std::string)
-       5) number of available "gesures" (int)
-   3 things it can do:
-       1) control computer navigation
-       2) track physical movement when touched
-       3) scroll the screen 
-*/
+//Thing 6) trackpad
+//5 properties:
+   //1) number of buttons (int)
+    int numButtons = 1
+   //2) width of trackpad (float)
+    float widthOfTrackPadInInches = 3.9f;
+   //3) sensitivity of trackpad (double)
+    double trackPadSensitivityValue = 3.0089;
+   //4) color of trackpad (std::string)
+    std::string colorOfTrackpad = "Navy Blue";
+   //5) number of available "gesures" (int)
+    int numAvailableGestures = 7;
+//3 things it can do:
+   //1) control computer navigation
+   //2) track physical movement when touched
+   //3) scroll the screen 
 };
 
 struct computerScreen
 {
-/*
-   Thing 7) screen
-   5 properties:
-       1) available visible screen space (float)
-       2) amount of brightness (float)
-       3) width of screen (float)
-       4) aspect ratio (float)
-       5) refresh rate (int)
-   3 things it can do:
-       1) display graphics
-       2) display text
-       3) generate heat
-*/
+//Thing 7) screen
+//5 properties:
+   //1) available visible screen space in inches (float)
+    float numAvailableScreenSpaceInInches = 13.6f;
+   //2) amount of brightness in nits (float)
+    float amtOfBrightnessInNits = 1400.5f;
+   //3) width of screen (float)
+    float widthOfLaptopScreenInInches = 11.97; 
+   //4) aspect ratio (float)
+    float aspectRatio = 1.78;
+   //5) refresh rate in hz (int)
+    int refreshRateInHz = 60;
+//3 things it can do:
+   //1) display graphics
+   //2) display text
+   //3) generate heat
 };
 
 struct computerCharger
 {
-    /*
-       Thing 8) charger
-       5 properties:
-           1) name of input type (std::string)
-           2) speed of charging (float)
-           3) input voltage (float)
-           4) length of cord (float)
-           5) amount of wattage required to run (float)
-       3 things it can do:
-           1) charge laptop
-           2) charge phone
-           3) explode
-    */
+//Thing 8) charger
+//5 properties:
+   //1) name of input type (std::string)
+    std::string magSafeCharger = "Mag Safe Charger";
+   //2) speed of charging (float)
+    float speedOfChargingInHours = 2.5f;
+   //3) input voltage (float)
+    float inputVoltageInVolts = 110.0f;
+   //4) length of cord (float)
+    float lengthOfChordInFeet = 5.5;
+   //5) amount of wattage required to run (float)
+    float amountOfWattage = 5.0f;
+//3 things it can do:
+   //1) charge laptop
+   //2) charge phone
+   //3) explode
 };
 
 struct externalHardDrive
 {
-/*
-   Thing 9) external hard drive
-   5 properties:
-       1) amount of storage (int)
-       2) speed of data transfer (float)
-       3) physical size of drive (float)
-       4) amount of voltage needed to run (float)
-       5) number of partitions (int)
-   3 things it can do:
-       1) store data
-       2) transfer data
-       3) use energy
-*/
+//Thing 9) external hard drive
+//5 properties:
+   //1) amount of storage in gigabytes(int)
+    int amountOfStorageInGb = 250;
+   //2) speed of data transfer in Mb per sec (float)
+    float speedOfDataTransferInMbps = 500.0f;
+   //3) physical size of drive (float)
+    float hardDrivePhysicalSize = 2.5f;
+   //4) amount of voltage needed to run (float)
+    float amtVoltageToRunHardDrive = 12.5;
+   //5) number of partitions (int)
+    int numPartitions = 3;
+//3 things it can do:
+   //1) store data
+   //2) transfer data
+   //3) use energy
 };
 
 struct laptop
 {
-/*
-   Thing 10) laptop
-   5 properties:
-       1) keyboard
-       2) trackpad
-       3) screen
-       4) charger
-       5) external hard drive
-   3 things it can do:
-       1) store data
-       2) run applications
-       3) connect to the internet
-*/
+//Thing 10) laptop
+//5 properties:
+   //1) keyboard
+    int numKeyboards = 1;
+   //2) trackpad
+    int numTrackpads = 1;
+   //3) screen
+    int numScreens = 1;
+   //4) charger
+    int numChargers = 2;
+   //5) external hard drive
+    int numExternalDrives = 2;
+//3 things it can do:
+   //1) store data
+   //2) run applications
+   //3) connect to the internet
 };
 /*
 =================
