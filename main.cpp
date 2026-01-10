@@ -199,54 +199,6 @@ Part 1b - Step 2: Assignment
         primitives.
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
-
-Thing 1) gym
-5 properties: 
-    1) number of employees
-    2) amount of treadmills
-    3) number of daily classes
-    4) number of clients
-    5) range of weights
-3 things it can do:
-    1) make money
-    2) burn calories
-    3) build muscle
-
-Thing 2) grocery store
-5 properties:
-    1) amount of produce
-    2) number of registers
-    3) number of carts
-    4) number of employees
-    5) number of doors
-3 things it can do:
-    1) sell food
-    2) sell alcohol
-    3) give free samples
-
-Thing 3) county fair
-5 properties:
-    1) number of rides
-    2) number of food vendors
-    3) number of attendees
-    4) number of games
-    5) location
-3 things it can do:
-    1) entertain a large group of people
-    2) create memories
-    3) showcase uncommon animals
-
-Thing 4) arcade
-5 properties:
-    1) number of games
-    2) number of credits paid per game
-    3) number of customers
-    4) hours of operation
-    5) cost of wear and tear
-3 things it can do:
-    1) create entertainment
-    2) sell food and beverage
-    3) cause motion sickness
 */
 
 /*
@@ -322,30 +274,6 @@ example:
         Brightness (double)
         area in cm2 (int)
         brand (std::string)
-    Gym:
-        1) number of employees (int)
-        2) amount of treadmills (int)
-        3) number of daily classes (int)
-        4) number of clients (int)
-        5) range of weights (int)
-    Grocery Store
-        1) amount of produce (float)
-        2) number of registers (int)
-        3) number of carts (int)
-        4) number of employees (int)
-        5) number of doors (int)
-    County Fair:
-        1) number of rides (int)
-        2) number of food vendors (int)
-        3) number of attendees (int)
-        4) number of games (int)
-        5) location (std::string)
-    Arcade:    
-        1) number of games (int)
-        2) number of credits paid per game (float)
-        3) number of customers (int)
-        4) hours of operation (int)
-        5) cost of wear and tear (float)
 */
 
 /*
@@ -461,66 +389,6 @@ example:
     If #10's first property was 'Engine', then `Thing 5)` will be `Engine`. 
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
-
-Thing 5) keyboard
-5 properties:
-    1) number of keys
-    2) depth of keys
-    3) width of keyboard
-    4) amount of noise made per key press
-    5) number of special keys
-3 things it can do:
-    1) type letters
-    2) raise computer volume
-    3) raise and dim the screen brightnes
-
-Thing 6) trackpad
-5 properties:
-    1) number of buttons
-    2) width of trackpad
-    3) sensitivity of trackpad
-    4) color of trackpad
-    5) number of available "gesures"
-3 things it can do:
-    1) control computer navigation
-    2) track physical movement when touched
-    3) scroll the screen 
-
-Thing 7) screen
-5 properties:
-    1) available visible screen space
-    2) amount of brightness
-    3) width of screen
-    4) aspect ratio
-    5) refresh rate
-3 things it can do:
-    1) display graphics
-    2) display text
-    3) generate heat
-
-Thing 8) charger
-5 properties:
-    1) name of input type
-    2) speed of charging
-    3) input voltage
-    4) length of cord
-    5) amount of wattage required to run
-3 things it can do:
-    1) charge laptop
-    2) charge phone
-    3) explode
-
-Thing 9) external hard drive
-5 properties:
-    1) amount of storage
-    2) speed of data transfer
-    3) physical size of drive
-    4) amount of voltage needed to run
-    5) number of partitions
-3 things it can do:
-    1) store data
-    2) transfer data
-    3) use energy
  */
 
 /*
@@ -546,24 +414,6 @@ example:
         Brightness (double)
         width in cm (int)
         height in cm (int)
-    Screen:
-        1) available visible screen space (float)
-        2) amount of brightness (float)
-        3) width of screen (float)
-        4) aspect ratio (float)
-        5) refresh rate (int)
-    Charger:
-        1) name of input type (std::string)
-        2) speed of charging (float)
-        3) input voltage (float)
-        4) length of cord (float)
-        5) amount of wattage required to run (float)
-    External Hard Drive:
-        1) amount of storage (int)
-        2) speed of data transfer (float)
-        3) physical size of drive (float)
-        4) amount of voltage needed to run (float)
-        5) number of partitions (int)
 */
 
 /*
@@ -590,10 +440,115 @@ MOVE THEM to the space below this block comment and put them in numerical order
     I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
     simply CUT and PASTE them in the space provided below:
 */
+/*
+    Thing 1) gym
+    5 properties: 
+        1) number of employees (int)
+        2) amount of treadmills (int)
+        3) number of daily classes (int)
+        4) number of clients (int)
+        5) range of weights (int)
+    3 things it can do:
+        1) make money
+        2) burn calories
+        3) build muscle
+    
+    Thing 2) grocery store
+    5 properties:
+        1) amount of produce (float)
+        2) number of registers (int)
+        3) number of carts (int)
+        4) number of employees (int)
+        5) number of doors (int)
+    3 things it can do:
+        1) sell food
+        2) sell alcohol
+        3) give free samples
+    
+    Thing 3) county fair
+    5 properties:
+        1) number of rides (int)
+        2) number of food vendors (int)
+        3) number of attendees (int)
+        4) number of games (int)
+        5) location (std::string)
+    3 things it can do:
+        1) entertain a large group of people
+        2) create memories
+        3) showcase uncommon animals
+    
+    Thing 4) arcade
+    5 properties:
+        1) number of games (int)
+        2) number of credits paid per game (float)
+        3) number of customers (int)
+        4) hours of operation (int)
+        5) cost of wear and tear (float)
+    3 things it can do:
+        1) create entertainment
+        2) sell food and beverage
+        3) cause motion sickness
 
+   Thing 5) keyboard
+   5 properties:
+       1) number of keys (int)
+       2) depth of keys (float)
+       3) width of keyboard (float)
+       4) amount of noise made per key press in dB (float)
+       5) number of special keys (int)
+   3 things it can do:
+       1) type letters
+       2) raise computer volume
+       3) raise and dim the screen brightnes
 
+   Thing 6) trackpad
+   5 properties:
+       1) number of buttons (int)
+       2) width of trackpad (float)
+       3) sensitivity of trackpad (double)
+       4) color of trackpad (std::string)
+       5) number of available "gesures" (int)
+   3 things it can do:
+       1) control computer navigation
+       2) track physical movement when touched
+       3) scroll the screen 
 
+   Thing 7) screen
+   5 properties:
+       1) available visible screen space (float)
+       2) amount of brightness (float)
+       3) width of screen (float)
+       4) aspect ratio (float)
+       5) refresh rate (int)
+   3 things it can do:
+       1) display graphics
+       2) display text
+       3) generate heat
 
+   Thing 8) charger
+   5 properties:
+       1) name of input type (std::string)
+       2) speed of charging (float)
+       3) input voltage (float)
+       4) length of cord (float)
+       5) amount of wattage required to run (float)
+   3 things it can do:
+       1) charge laptop
+       2) charge phone
+       3) explode
+
+   Thing 9) external hard drive
+   5 properties:
+       1) amount of storage (int)
+       2) speed of data transfer (float)
+       3) physical size of drive (float)
+       4) amount of voltage needed to run (float)
+       5) number of partitions (int)
+   3 things it can do:
+       1) store data
+       2) transfer data
+       3) use energy
+*/
 
 
 
