@@ -292,18 +292,6 @@ Part 1c - Step 4: Assignment
 Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
-
-Thing 10) laptop
-5 properties:
-    1) keyboard
-    2) trackpad
-    3) screen
-    4) charger
-    5) external hard drive
-3 things it can do:
-    1) store data
-    2) run applications
-    3) connect to the internet
  */
 
  /*
@@ -524,7 +512,7 @@ MOVE THEM to the space below this block comment and put them in numerical order
        1) display graphics
        2) display text
        3) generate heat
-
+       
    Thing 8) charger
    5 properties:
        1) name of input type (std::string)
@@ -548,6 +536,17 @@ MOVE THEM to the space below this block comment and put them in numerical order
        1) store data
        2) transfer data
        3) use energy
+   Thing 10) laptop
+   5 properties:
+       1) keyboard
+       2) trackpad
+       3) screen
+       4) charger
+       5) external hard drive
+   3 things it can do:
+       1) store data
+       2) run applications
+       3) connect to the internet
 */
 
 
