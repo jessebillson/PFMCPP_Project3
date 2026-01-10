@@ -440,7 +440,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
         1) make money
         2) burn calories
         3) build muscle
-    
+*/
+struct gym
+{
+
+};
+/*
     Thing 2) grocery store
     5 properties:
         1) amount of produce (float)
@@ -452,7 +457,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
         1) sell food
         2) sell alcohol
         3) give free samples
-    
+*/
+struct groceryStore
+{
+
+};
+/*
     Thing 3) county fair
     5 properties:
         1) number of rides (int)
@@ -464,7 +474,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
         1) entertain a large group of people
         2) create memories
         3) showcase uncommon animals
-    
+*/
+struct countyFair
+{
+
+};
+/*
     Thing 4) arcade
     5 properties:
         1) number of games (int)
@@ -476,7 +491,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
         1) create entertainment
         2) sell food and beverage
         3) cause motion sickness
+*/
+struct arcade
+{
 
+};
+/*
    Thing 5) keyboard
    5 properties:
        1) number of keys (int)
@@ -488,7 +508,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
        1) type letters
        2) raise computer volume
        3) raise and dim the screen brightnes
+*/
+struct keyboard
+{
 
+};
+/*
    Thing 6) trackpad
    5 properties:
        1) number of buttons (int)
@@ -500,7 +525,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
        1) control computer navigation
        2) track physical movement when touched
        3) scroll the screen 
+*/
+struct trackPad
+{
 
+};
+/*
    Thing 7) screen
    5 properties:
        1) available visible screen space (float)
@@ -512,7 +542,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
        1) display graphics
        2) display text
        3) generate heat
-       
+*/
+struct computerScreen
+{
+
+};
+/*
    Thing 8) charger
    5 properties:
        1) name of input type (std::string)
@@ -524,7 +559,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
        1) charge laptop
        2) charge phone
        3) explode
-
+*/
+struct computerCharger
+{
+    
+};
+/*
    Thing 9) external hard drive
    5 properties:
        1) amount of storage (int)
@@ -536,6 +576,12 @@ MOVE THEM to the space below this block comment and put them in numerical order
        1) store data
        2) transfer data
        3) use energy
+*/
+struct externalHardDrive
+{
+
+};
+/*
    Thing 10) laptop
    5 properties:
        1) keyboard
@@ -548,10 +594,10 @@ MOVE THEM to the space below this block comment and put them in numerical order
        2) run applications
        3) connect to the internet
 */
+struct laptop
+{
 
-
-
-
+};
 /*
 =================
 Part 1d - Step 7: Commit
