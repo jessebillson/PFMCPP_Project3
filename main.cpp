@@ -83,51 +83,55 @@ Main Object: Car Interior
         Name 4 nouns you'll find on the [Sub Object]
             1) paddle shifters
             2) 'cruise control' controls
-            3) 
-            4) 
+            3) horn button
+            4) phone answering button
         Name 2 actions that the [Sub Object] can do:
-            1) adjust cruise control settings.
-            2)
+            1) change the gear of the car
+            2) adjust cruise control settings.
+            3) alert others of your presence
+            2) turn the car
         
     Sub Object: Instrument Cluster
         Name 4 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
-            4)
+            1) tachometer
+            2) speedometer
+            3) odometer
+            4) check engine light
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) display the RPM of the engine
+            2) diplay the speed of travel
+            3) display how many miles have been driven
+            4) display when there is something wrong with the car
     
     Sub Object: Environment Controls
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) hazard light control
+            2) air conditioning controls
+            3) window defrost control
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) control the temperature of the car's interior
+            2) display to other drivers that the vehicle is stopped in a potentially unexpected manner
+            3) defrost a foggy window
 
     Sub Object: Infotainment System
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) radio volume control
+            2) time and date settings
+            3) wireless phone connection options
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) raise and lower the volume of the car stereo
+            2) display the correct time and date
+            3) allow hands free calling and app integration
 
     Sub Object: Seat 
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) position adjuster
+            2) seat belt
+            3) headrest
         Name 2 actions that the [Sub Object] can do:
-            1)
-            2)
+            1) adjust seating position
+            2) hold you in place
+            3) protect against injury
 */
 
 /*
