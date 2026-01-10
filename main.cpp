@@ -200,53 +200,53 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+Thing 1) gym
+5 properties: 
+    1) number of employees
+    2) amount of treadmills
+    3) number of daily classes
+    4) number of clients
+    5) range of weights
 3 things it can do:
-    1)
-    2)
-    3)
+    1) make money
+    2) burn calories
+    3) build muscle
 
-Thing 2)
+Thing 2) grocery store
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) amount of produce
+    2) number of registers
+    3) number of carts
+    4) number of employees
+    5) number of doors
 3 things it can do:
-    1)
-    2)
-    3)
+    1) sell food
+    2) sell alcohol
+    3) give free samples
 
-Thing 3)
+Thing 3) county fair
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of rides
+    2) number of food vendors
+    3) number of attendees
+    4) number of games
+    5) location
 3 things it can do:
-    1)
-    2)
-    3)
+    1) entertain a large group of people
+    2) create memories
+    3) showcase uncommon animals
 
-Thing 4)
+Thing 4) arcade
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of games
+    2) number of credits paid per game
+    3) number of customers
+    4) hours of operation
+    5) cost of wear and tear
 3 things it can do:
-    1)
-    2)
-    3)
+    1) create entertainment
+    2) sell food and beverage
+    3) cause motion sickness
 */
 
 /*
