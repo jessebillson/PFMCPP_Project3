@@ -322,6 +322,30 @@ example:
         Brightness (double)
         area in cm2 (int)
         brand (std::string)
+    Gym:
+        1) number of employees (int)
+        2) amount of treadmills (int)
+        3) number of daily classes (int)
+        4) number of clients (int)
+        5) range of weights (int)
+    Grocery Store
+        1) amount of produce (float)
+        2) number of registers (int)
+        3) number of carts (int)
+        4) number of employees (int)
+        5) number of doors (int)
+    County Fair:
+        1) number of rides (int)
+        2) number of food vendors (int)
+        3) number of attendees (int)
+        4) number of games (int)
+        5) location (std::string)
+    Arcade:    
+        1) number of games (int)
+        2) number of credits paid per game (float)
+        3) number of customers (int)
+        4) hours of operation (int)
+        5) cost of wear and tear (float)
 */
 
 /*
