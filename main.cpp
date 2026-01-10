@@ -546,6 +546,24 @@ example:
         Brightness (double)
         width in cm (int)
         height in cm (int)
+    Screen:
+        1) available visible screen space (float)
+        2) amount of brightness (float)
+        3) width of screen (float)
+        4) aspect ratio (float)
+        5) refresh rate (int)
+    Charger:
+        1) name of input type (std::string)
+        2) speed of charging (float)
+        3) input voltage (float)
+        4) length of cord (float)
+        5) amount of wattage required to run (float)
+    External Hard Drive:
+        1) amount of storage (int)
+        2) speed of data transfer (float)
+        3) physical size of drive (float)
+        4) amount of voltage needed to run (float)
+        5) number of partitions (int)
 */
 
 /*
