@@ -445,8 +445,11 @@ struct gym
     int rangeOfWeight = 100; //I actually can't think of a way to represent this in one line. so the range is 100.
 //3 things it can do:
     //1) make money
+    float moneyEarned(float discountedSalePrice);
     //2) burn calories
+    float burnCalories();
     //3) build muscle
+    void buildMuscle();
 };
 
 struct groceryStore
@@ -465,8 +468,11 @@ struct groceryStore
     int numDoors = 4;
 //3 things it can do:
     //1) sell food
+    float dailyFoodSales(float totalDailyFoodSales);
     //2) sell alcohol
+    float dailyAlcoholSales(float totalDailyAlcoholSales);
     //3) give free samples
+    void giveFreeSamples();
 };
 
 struct countyFair
@@ -485,8 +491,11 @@ struct countyFair
     std::string location = "Orange County Fairgrounds";
 //3 things it can do:
     //1) entertain a large group of people
+    void entertainLargeGroup();
     //2) create memories
+    void createMemories();
     //3) showcase uncommon animals
+    void showcaseUncommonAnimals();
 };
 
 struct arcade
@@ -505,8 +514,11 @@ struct arcade
     float annualCostOfWearAndTear = 7658.79f;
 //3 things it can do:
     //1) create entertainment
+    void createEntertainment();
     //2) sell food and beverage
+    float foodAndBeverageSales(float dailyFoodAndBeverageSales);
     //3) cause motion sickness
+    void causeMotionSickness();
 };
 
 struct keyboard
@@ -525,8 +537,11 @@ struct keyboard
     int numSpecialKeys = 13;
 //3 things it can do:
    //1) type letters
+    void typeLetters();
    //2) raise computer volume
+    float raiseVolumeAmountInDb(float volumeInDb);    
    //3) raise and dim the screen brightnes
+    float screenBrightness(float amtInNits);
 };
 
 struct trackPad
@@ -545,8 +560,11 @@ struct trackPad
     int numAvailableGestures = 7;
 //3 things it can do:
    //1) control computer navigation
+    void controlComputerNavigation();
    //2) track physical movement when touched
+    float trackPadPosition(float x, float y);
    //3) scroll the screen 
+    void scrollScreen();
 };
 
 struct computerScreen
@@ -565,8 +583,11 @@ struct computerScreen
     int refreshRateInHz = 60;
 //3 things it can do:
    //1) display graphics
+    void displayGraphics();
    //2) display text
+    void displayText();
    //3) generate heat
+    floatGenerateHeat(float amtOfDegreesInFahrenheit);
 };
 
 struct computerCharger
@@ -585,8 +606,11 @@ struct computerCharger
     float amountOfWattage = 5.0f;
 //3 things it can do:
    //1) charge laptop
+    float chargeLaptop(float energyConsumedInJoules);
    //2) charge phone
+    float chargePhone(float energyConsumedInJoules);
    //3) explode
+    void explode(float splOfExplosionInDb);
 };
 
 struct externalHardDrive
@@ -605,8 +629,11 @@ struct externalHardDrive
     int numPartitions = 3;
 //3 things it can do:
    //1) store data
+    float storeData(int amountOfDataInGb);
    //2) transfer data
+    float transferData(int amountOfDataInGb);
    //3) use energy
+    float energyConsumption(float energyConsumedInJoules);
 };
 
 struct laptop
@@ -625,8 +652,11 @@ struct laptop
     int numExternalDrives = 2;
 //3 things it can do:
    //1) store data
+    float dataStoredInGb(float amountOfDataInGb);
    //2) run applications
+    void runApplications();
    //3) connect to the internet
+    void connectToInternet();
 };
 /*
 =================
