@@ -462,65 +462,65 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
+Thing 5) keyboard
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of keys
+    2) depth of keys
+    3) width of keyboard
+    4) amount of noise made per key press
+    5) number of special keys
 3 things it can do:
-    1)
-    2)
-    3)
+    1) type letters
+    2) raise computer volume
+    3) raise and dim the screen brightnes
 
-Thing 6)
+Thing 6) trackpad
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of buttons
+    2) width of trackpad
+    3) sensitivity of trackpad
+    4) color of trackpad
+    5) number of available "gesures"
 3 things it can do:
-    1)
-    2)
-    3)
+    1) control computer navigation
+    2) track physical movement when touched
+    3) scroll the screen 
 
-Thing 7)
+Thing 7) screen
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) available visible screen space
+    2) amount of brightness
+    3) width of screen
+    4) aspect ratio
+    5) refresh rate
 3 things it can do:
-    1)
-    2)
-    3)
+    1) display graphics
+    2) display text
+    3) generate heat
 
-Thing 8)
+Thing 8) charger
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) name of input type
+    2) speed of charging
+    3) input voltage
+    4) length of cord
+    5) amount of wattage required to run
 3 things it can do:
-    1)
-    2)
-    3)
+    1) charge laptop
+    2) charge phone
+    3) explode
 
-Thing 9)
+Thing 9) external hard drive
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) amount of storage
+    2) speed of data transfer
+    3) physical size of drive
+    4) amount of voltage needed to run
+    5) number of partitions
 3 things it can do:
-    1)
-    2)
-    3)
+    1) store data
+    2) transfer data
+    3) use energy
  */
 
 /*
