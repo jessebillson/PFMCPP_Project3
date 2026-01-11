@@ -429,266 +429,7 @@ MOVE THEM to the space below this block comment and put them in numerical order
     simply CUT and PASTE them in the space provided below:
 */
 
-struct Gym
-{
-//Thing 1) gym
-//5 properties: 
-    //1) number of employees (int)
-    int numEmployees = 12;
-    //2) amount of treadmills (int)
-    int numTreadmills = 10;
-    //3) number of daily classes (int)
-    int numDailyClasses = 16;
-    //4) number of clients (int)
-    int numClient = 116;
-    //5) range of weights (int)
-    int rangeOfWeight = 100; //I actually can't think of a way to represent this in one line. so the range is 100.
-    struct Human
-    {
-        std::string humanName = "Jesse";
-        bool isMale = true;
-        int age = 35;
-        int weightInLbs = 175;
-        float mileRunTime = 6.57f;   
 
-        int membershipStatus(bool isMember, int numMonthsAsMember);
-        bool usesMembershipPerks(bool showerAccess, bool classes, bool hasPersonalTrainer);
-        void workoutPreference(int numTimesPerWeekWeights, int numTimesPerWeekCardio, int numTimesPerWeekYoga);
-    };
-
-    void personalTrainer(Human customer);
-    Human strengthTraining;
-//3 things it can do:
-    //1) make money
-    float moneyEarned(float discountedSalePrice);
-    //2) burn calories
-    float burnCalories();
-    //3) build muscle
-    void buildMuscle();
-};
-
-struct GroceryStore
-{
-//Thing 2) grocery store
-//5 properties:
-    //1) amount of produce (float)
-    float amountOfProduceInLbs = 813.4f;
-    //2) number of registers (int)
-    float numRegisters = 12;
-    //3) number of carts (int)
-    int numCart = 70;
-    //4) number of employees (int)
-    int numEmployees = 50;
-    //5) number of doors (int)
-    int numDoors = 4;
-//3 things it can do:
-    //1) sell food
-    float dailyFoodSales(float totalDailyFoodSales);
-    //2) sell alcohol
-    float dailyAlcoholSales(float totalDailyAlcoholSales);
-    //3) give free samples
-    void giveFreeSamples();
-};
-
-struct CountyFair
-{
-//Thing 3) county fair
-//5 properties:
-    //1) number of rides (int)
-    int numRides = 16;
-    //2) number of food vendors (int)
-    int numFoodVendors = 14;
-    //3) number of attendees (int)
-    int numAttendees = 2000;
-    //4) number of games (int)
-    int numGames = 30;
-    //5) location (std::string)
-    std::string location = "Orange County Fairgrounds";
-//3 things it can do:
-    //1) entertain a large group of people
-    void entertainLargeGroup();
-    //2) create memories
-    void createMemories();
-    //3) showcase uncommon animals
-    void showcaseUncommonAnimals();
-};
-
-struct Arcade
-{
-//Thing 4) arcade
-//5 properties:
-    //1) number of games (int)
-    int numGames = 33;
-    //2) number of credits paid per game (float)
-    float numCreditsToPlayGame = 7.5f;
-    //3) number of customers (int)
-    int numCustomers = 90;
-    //4) hours of operation (int)
-    int hoursOfOperation = 800; //military opening time. I couldn't think of a way to represent open and closing times in one line
-    //5) annual cost of wear and tear in USD (float)
-    float annualCostOfWearAndTear = 7658.79f;
-    struct Customer
-    {
-        int customerNumber = 1316425;
-        bool customerisOver21 = true;
-        std::string customerFavoriteGame = "Pac Man";
-        int favoriteGameHighScore = 999999;
-        float customerAvailableCredits = 652.5f;
-
-        int customerGamePlayStats(int numGamesPlayedToday, int numCreditsUsed, int todaysHighScore);
-        float customerPerformance(float avgScore, float avgCreditsUsed);
-        auto customerPersonalInfoOnFile(std::string customerName, bool customerisOver21, std::string customerAddress);
-    };    
-
-    void competitiveGamerProfile(Customer customer);
-    Customer newHighScore;
-
-//3 things it can do:
-    //1) create entertainment
-    void createEntertainment();
-    //2) sell food and beverage
-    float foodAndBeverageSales(float dailyFoodAndBeverageSales);
-    //3) cause motion sickness
-    void causeMotionSickness();
-};
-
-struct Keyboard
-{
-//Thing 5) keyboard
-//5 properties:
-   //1) number of keys (int)
-    int numKeys = 104;
-   //2) depth of keys in millimeters (float)
-    float depthOfKeysInMm = 1.09f;
-   //3) width of keyboard in inches (float)
-    float widthOfKeyboardInInches = 11.75f;
-   //4) amount of noise made per key press in dB (float)
-    float volumeOfKeyPressedInDb = 32.2f;
-   //5) number of special keys (int)
-    int numSpecialKeys = 13;
-//3 things it can do:
-   //1) type letters
-    void typeLetters();
-   //2) raise computer volume
-    float raiseVolumeAmountInDb(float volumeInDb);    
-   //3) raise and dim the screen brightnes
-    float screenBrightness(float amtInNits);
-};
-
-struct TrackPad
-{
-//Thing 6) trackpad
-//5 properties:
-   //1) number of buttons (int)
-    int numButtons = 1;
-   //2) width of trackpad (float)
-    float widthOfTrackPadInInches = 3.9f;
-   //3) sensitivity of trackpad (double)
-    double trackPadSensitivityValue = 3.0089;
-   //4) color of trackpad (std::string)
-    std::string colorOfTrackpad = "Navy Blue";
-   //5) number of available "gesures" (int)
-    int numAvailableGestures = 7;
-//3 things it can do:
-   //1) control computer navigation
-    void controlComputerNavigation();
-   //2) track physical movement when touched
-    float trackPadPosition(float x, float y);
-   //3) scroll the screen 
-    void scrollScreen();
-};
-
-struct ComputerScreen
-{
-//Thing 7) screen
-//5 properties:
-   //1) available visible screen space in inches (float)
-    float numAvailableScreenSpaceInInches = 13.6f;
-   //2) amount of brightness in nits (float)
-    float amtOfBrightnessInNits = 1400.5f;
-   //3) width of screen (float)
-    float widthOfLaptopScreenInInches = 11.97f; 
-   //4) aspect ratio (float)
-    float aspectRatio = 1.78f;
-   //5) refresh rate in hz (int)
-    int refreshRateInHz = 60;
-//3 things it can do:
-   //1) display graphics
-    void displayGraphics();
-   //2) display text
-    void displayText();
-   //3) generate heat
-    float generateHeat(float amtOfDegreesInFahrenheit);
-};
-
-struct ComputerCharger
-{
-//Thing 8) charger
-//5 properties:
-   //1) name of input type (std::string)
-    std::string magSafeCharger = "Mag Safe Charger";
-   //2) speed of charging (float)
-    float speedOfChargingInHours = 2.5f;
-   //3) input voltage (float)
-    float inputVoltageInVolts = 110.0f;
-   //4) length of cord (float)
-    float lengthOfChordInFeet = 5.5;
-   //5) amount of wattage required to run (float)
-    float amountOfWattage = 5.0f;
-//3 things it can do:
-   //1) charge laptop
-    float chargeLaptop(float energyConsumedInJoules);
-   //2) charge phone
-    float chargePhone(float energyConsumedInJoules);
-   //3) explode
-    void explode(float splOfExplosionInDb);
-};
-
-struct ExternalHardDrive
-{
-//Thing 9) external hard drive
-//5 properties:
-   //1) amount of storage in gigabytes(int)
-    int amountOfStorageInGb = 250;
-   //2) speed of data transfer in Mb per sec (float)
-    float speedOfDataTransferInMbps = 500.0f;
-   //3) physical size of drive (float)
-    float hardDrivePhysicalSize = 2.5f;
-   //4) amount of voltage needed to run (float)
-    float amtVoltageToRunHardDrive = 12.5;
-   //5) number of partitions (int)
-    int numPartitions = 3;
-//3 things it can do:
-   //1) store data
-    float storeData(int amountOfDataInGb);
-   //2) transfer data
-    float transferData(int amountOfDataInGb);
-   //3) use energy
-    float energyConsumption(float energyConsumedInJoules);
-};
-
-struct Laptop
-{
-//Thing 10) laptop
-//5 properties:
-   //1) keyboard
-    Keyboard keyboard;
-   //2) trackpad
-    TrackPad trackpad;
-   //3) screen
-    ComputerScreen screen;
-   //4) charger
-    ComputerCharger charger;
-   //5) external hard drive
-    ExternalHardDrive externalHardDrive;
-//3 things it can do:
-   //1) store data
-    float dataStoredInGb(float amountOfDataInGb);
-   //2) run applications
-    void runApplications();
-   //3) connect to the internet
-    void connectToInternet();
-};
 /*
 =================
 Part 1d - Step 7: Commit
@@ -1146,7 +887,266 @@ Part 1e - Step 19: Request a review
 /*
 paste your code below
 */
+    struct Gym
+    {
+    //Thing 1) gym
+    //5 properties: 
+        //1) number of employees (int)
+        int numEmployees = 12;
+        //2) amount of treadmills (int)
+        int numTreadmills = 10;
+        //3) number of daily classes (int)
+        int numDailyClasses = 16;
+        //4) number of clients (int)
+        int numClient = 116;
+        //5) range of weights (int)
+        int rangeOfWeight = 100; //I actually can't think of a way to represent this in one line. so the range is 100.
+        struct Human
+        {
+            std::string humanName = "Jesse";
+            bool isMale = true;
+            int age = 35;
+            int weightInLbs = 175;
+            float mileRunTime = 6.57f;   
 
+            int membershipStatus(bool isMember, int numMonthsAsMember);
+            bool usesMembershipPerks(bool showerAccess, bool classes, bool hasPersonalTrainer);
+            void workoutPreference(int numTimesPerWeekWeights, int numTimesPerWeekCardio, int numTimesPerWeekYoga);
+        };
+
+        void personalTrainer(Human customer);
+        Human strengthTraining;
+    //3 things it can do:
+        //1) make money
+        float moneyEarned(float discountedSalePrice);
+        //2) burn calories
+        float burnCalories();
+        //3) build muscle
+        void buildMuscle();
+    };
+
+    struct GroceryStore
+    {
+    //Thing 2) grocery store
+    //5 properties:
+        //1) amount of produce (float)
+        float amountOfProduceInLbs = 813.4f;
+        //2) number of registers (int)
+        float numRegisters = 12;
+        //3) number of carts (int)
+        int numCart = 70;
+        //4) number of employees (int)
+        int numEmployees = 50;
+        //5) number of doors (int)
+        int numDoors = 4;
+    //3 things it can do:
+        //1) sell food
+        float dailyFoodSales(float totalDailyFoodSales);
+        //2) sell alcohol
+        float dailyAlcoholSales(float totalDailyAlcoholSales);
+        //3) give free samples
+        void giveFreeSamples();
+    };
+
+    struct CountyFair
+    {
+    //Thing 3) county fair
+    //5 properties:
+        //1) number of rides (int)
+        int numRides = 16;
+        //2) number of food vendors (int)
+        int numFoodVendors = 14;
+        //3) number of attendees (int)
+        int numAttendees = 2000;
+        //4) number of games (int)
+        int numGames = 30;
+        //5) location (std::string)
+        std::string location = "Orange County Fairgrounds";
+    //3 things it can do:
+        //1) entertain a large group of people
+        void entertainLargeGroup();
+        //2) create memories
+        void createMemories();
+        //3) showcase uncommon animals
+        void showcaseUncommonAnimals();
+    };
+
+    struct Arcade
+    {
+    //Thing 4) arcade
+    //5 properties:
+        //1) number of games (int)
+        int numGames = 33;
+        //2) number of credits paid per game (float)
+        float numCreditsToPlayGame = 7.5f;
+        //3) number of customers (int)
+        int numCustomers = 90;
+        //4) hours of operation (int)
+        int hoursOfOperation = 800; //military opening time. I couldn't think of a way to represent open and closing times in one line
+        //5) annual cost of wear and tear in USD (float)
+        float annualCostOfWearAndTear = 7658.79f;
+        struct Customer
+        {
+            int customerNumber = 1316425;
+            bool customerisOver21 = true;
+            std::string customerFavoriteGame = "Pac Man";
+            int favoriteGameHighScore = 999999;
+            float customerAvailableCredits = 652.5f;
+
+            int customerGamePlayStats(int numGamesPlayedToday, int numCreditsUsed, int todaysHighScore);
+            float customerPerformance(float avgScore, float avgCreditsUsed);
+            auto customerPersonalInfoOnFile(std::string customerName, bool customerisOver21, std::string customerAddress);
+        };    
+
+        void competitiveGamerProfile(Customer customer);
+        Customer newHighScore;
+
+    //3 things it can do:
+        //1) create entertainment
+        void createEntertainment();
+        //2) sell food and beverage
+        float foodAndBeverageSales(float dailyFoodAndBeverageSales);
+        //3) cause motion sickness
+        void causeMotionSickness();
+    };
+
+    struct Keyboard
+    {
+    //Thing 5) keyboard
+    //5 properties:
+       //1) number of keys (int)
+        int numKeys = 104;
+       //2) depth of keys in millimeters (float)
+        float depthOfKeysInMm = 1.09f;
+       //3) width of keyboard in inches (float)
+        float widthOfKeyboardInInches = 11.75f;
+       //4) amount of noise made per key press in dB (float)
+        float volumeOfKeyPressedInDb = 32.2f;
+       //5) number of special keys (int)
+        int numSpecialKeys = 13;
+    //3 things it can do:
+       //1) type letters
+        void typeLetters();
+       //2) raise computer volume
+        float raiseVolumeAmountInDb(float volumeInDb);    
+       //3) raise and dim the screen brightnes
+        float screenBrightness(float amtInNits);
+    };
+
+    struct TrackPad
+    {
+    //Thing 6) trackpad
+    //5 properties:
+       //1) number of buttons (int)
+        int numButtons = 1;
+       //2) width of trackpad (float)
+        float widthOfTrackPadInInches = 3.9f;
+       //3) sensitivity of trackpad (double)
+        double trackPadSensitivityValue = 3.0089;
+       //4) color of trackpad (std::string)
+        std::string colorOfTrackpad = "Navy Blue";
+       //5) number of available "gesures" (int)
+        int numAvailableGestures = 7;
+    //3 things it can do:
+       //1) control computer navigation
+        void controlComputerNavigation();
+       //2) track physical movement when touched
+        float trackPadPosition(float x, float y);
+       //3) scroll the screen 
+        void scrollScreen();
+    };
+
+    struct ComputerScreen
+    {
+    //Thing 7) screen
+    //5 properties:
+       //1) available visible screen space in inches (float)
+        float numAvailableScreenSpaceInInches = 13.6f;
+       //2) amount of brightness in nits (float)
+        float amtOfBrightnessInNits = 1400.5f;
+       //3) width of screen (float)
+        float widthOfLaptopScreenInInches = 11.97f; 
+       //4) aspect ratio (float)
+        float aspectRatio = 1.78f;
+       //5) refresh rate in hz (int)
+        int refreshRateInHz = 60;
+    //3 things it can do:
+       //1) display graphics
+        void displayGraphics();
+       //2) display text
+        void displayText();
+       //3) generate heat
+        float generateHeat(float amtOfDegreesInFahrenheit);
+    };
+
+    struct ComputerCharger
+    {
+    //Thing 8) charger
+    //5 properties:
+       //1) name of input type (std::string)
+        std::string magSafeCharger = "Mag Safe Charger";
+       //2) speed of charging (float)
+        float speedOfChargingInHours = 2.5f;
+       //3) input voltage (float)
+        float inputVoltageInVolts = 110.0f;
+       //4) length of cord (float)
+        float lengthOfChordInFeet = 5.5;
+       //5) amount of wattage required to run (float)
+        float amountOfWattage = 5.0f;
+    //3 things it can do:
+       //1) charge laptop
+        float chargeLaptop(float energyConsumedInJoules);
+       //2) charge phone
+        float chargePhone(float energyConsumedInJoules);
+       //3) explode
+        void explode(float splOfExplosionInDb);
+    };
+
+    struct ExternalHardDrive
+    {
+    //Thing 9) external hard drive
+    //5 properties:
+       //1) amount of storage in gigabytes(int)
+        int amountOfStorageInGb = 250;
+       //2) speed of data transfer in Mb per sec (float)
+        float speedOfDataTransferInMbps = 500.0f;
+       //3) physical size of drive (float)
+        float hardDrivePhysicalSize = 2.5f;
+       //4) amount of voltage needed to run (float)
+        float amtVoltageToRunHardDrive = 12.5;
+       //5) number of partitions (int)
+        int numPartitions = 3;
+    //3 things it can do:
+       //1) store data
+        float storeData(int amountOfDataInGb);
+       //2) transfer data
+        float transferData(int amountOfDataInGb);
+       //3) use energy
+        float energyConsumption(float energyConsumedInJoules);
+    };
+
+    struct Laptop
+    {
+    //Thing 10) laptop
+    //5 properties:
+       //1) keyboard
+        Keyboard keyboard;
+       //2) trackpad
+        TrackPad trackpad;
+       //3) screen
+        ComputerScreen screen;
+       //4) charger
+        ComputerCharger charger;
+       //5) external hard drive
+        ExternalHardDrive externalHardDrive;
+    //3 things it can do:
+       //1) store data
+        float dataStoredInGb(float amountOfDataInGb);
+       //2) run applications
+        void runApplications();
+       //3) connect to the internet
+        void connectToInternet();
+    };
 
 
 
