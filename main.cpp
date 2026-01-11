@@ -429,7 +429,7 @@ MOVE THEM to the space below this block comment and put them in numerical order
     simply CUT and PASTE them in the space provided below:
 */
 
-struct gym
+struct Gym
 {
 //Thing 1) gym
 //5 properties: 
@@ -443,7 +443,7 @@ struct gym
     int numClient = 116;
     //5) range of weights (int)
     int rangeOfWeight = 100; //I actually can't think of a way to represent this in one line. so the range is 100.
-    struct human
+    struct Human
     {
         std::string humanName = "Jesse";
         bool isMale = true;
@@ -455,6 +455,9 @@ struct gym
         bool usesMembershipPerks(bool showerAccess, bool classes, bool hasPersonalTrainer);
         void workoutPreference(int numTimesPerWeekWeights, int numTimesPerWeekCardio, int numTimesPerWeekYoga);
     };
+
+    void personalTrainer(Human customer);
+    Human strengthTraining;
 //3 things it can do:
     //1) make money
     float moneyEarned(float discountedSalePrice);
@@ -464,7 +467,7 @@ struct gym
     void buildMuscle();
 };
 
-struct groceryStore
+struct GroceryStore
 {
 //Thing 2) grocery store
 //5 properties:
@@ -487,7 +490,7 @@ struct groceryStore
     void giveFreeSamples();
 };
 
-struct countyFair
+struct CountyFair
 {
 //Thing 3) county fair
 //5 properties:
@@ -510,7 +513,7 @@ struct countyFair
     void showcaseUncommonAnimals();
 };
 
-struct arcade
+struct Arcade
 {
 //Thing 4) arcade
 //5 properties:
@@ -521,10 +524,10 @@ struct arcade
     //3) number of customers (int)
     int numCustomers = 90;
     //4) hours of operation (int)
-    int hoursOfOperation = 0800; //military opening time. I couldn't think of a way to represent open and closing times in one line
+    int hoursOfOperation = 800; //military opening time. I couldn't think of a way to represent open and closing times in one line
     //5) annual cost of wear and tear in USD (float)
     float annualCostOfWearAndTear = 7658.79f;
-    struct customer
+    struct Customer
     {
         int customerNumber = 1316425;
         bool customerisOver21 = true;
@@ -536,6 +539,10 @@ struct arcade
         float customerPerformance(float avgScore, float avgCreditsUsed);
         auto customerPersonalInfoOnFile(std::string customerName, bool customerisOver21, std::string customerAddress);
     };    
+
+    void competitiveGamerProfile(Customer customer);
+    Customer newHighScore
+
 //3 things it can do:
     //1) create entertainment
     void createEntertainment();
@@ -545,7 +552,7 @@ struct arcade
     void causeMotionSickness();
 };
 
-struct keyboard
+struct Keyboard
 {
 //Thing 5) keyboard
 //5 properties:
@@ -554,7 +561,7 @@ struct keyboard
    //2) depth of keys in millimeters (float)
     float depthOfKeysInMm = 1.09f;
    //3) width of keyboard in inches (float)
-    float widthOfKeyboardInInches = 11.75f
+    float widthOfKeyboardInInches = 11.75f;
    //4) amount of noise made per key press in dB (float)
     float volumeOfKeyPressedInDb = 32.2;
    //5) number of special keys (int)
@@ -568,12 +575,12 @@ struct keyboard
     float screenBrightness(float amtInNits);
 };
 
-struct trackPad
+struct TrackPad
 {
 //Thing 6) trackpad
 //5 properties:
    //1) number of buttons (int)
-    int numButtons = 1
+    int numButtons = 1;
    //2) width of trackpad (float)
     float widthOfTrackPadInInches = 3.9f;
    //3) sensitivity of trackpad (double)
@@ -591,7 +598,7 @@ struct trackPad
     void scrollScreen();
 };
 
-struct computerScreen
+struct ComputerScreen
 {
 //Thing 7) screen
 //5 properties:
@@ -611,10 +618,10 @@ struct computerScreen
    //2) display text
     void displayText();
    //3) generate heat
-    floatGenerateHeat(float amtOfDegreesInFahrenheit);
+    float generateHeat(float amtOfDegreesInFahrenheit);
 };
 
-struct computerCharger
+struct ComputerCharger
 {
 //Thing 8) charger
 //5 properties:
@@ -637,7 +644,7 @@ struct computerCharger
     void explode(float splOfExplosionInDb);
 };
 
-struct externalHardDrive
+struct ExternalHardDrive
 {
 //Thing 9) external hard drive
 //5 properties:
@@ -660,7 +667,7 @@ struct externalHardDrive
     float energyConsumption(float energyConsumedInJoules);
 };
 
-struct laptop
+struct Laptop
 {
 //Thing 10) laptop
 //5 properties:
