@@ -443,6 +443,18 @@ struct gym
     int numClient = 116;
     //5) range of weights (int)
     int rangeOfWeight = 100; //I actually can't think of a way to represent this in one line. so the range is 100.
+    struct human
+    {
+        std::string humanName = "Jesse";
+        bool isMale = true;
+        int age = 35;
+        int weightInLbs = 175;
+        float mileRunTime = 6.57f;   
+
+        int membershipStatus(bool isMember, int numMonthsAsMember);
+        bool usesMembershipPerks(bool showerAccess, bool classes, bool hasPersonalTrainer);
+        void workoutPreference(int numTimesPerWeekWeights, int numTimesPerWeekCardio, int numTimesPerWeekYoga);
+    };
 //3 things it can do:
     //1) make money
     float moneyEarned(float discountedSalePrice);
@@ -512,6 +524,18 @@ struct arcade
     int hoursOfOperation = 0800; //military opening time. I couldn't think of a way to represent open and closing times in one line
     //5) annual cost of wear and tear in USD (float)
     float annualCostOfWearAndTear = 7658.79f;
+    struct customer
+    {
+        int customerNumber = 1316425;
+        bool customerisOver21 = true;
+        std::string customerFavoriteGame = "Pac Man";
+        int favoriteGameHighScore = 999999;
+        float customerAvailableCredits = 652.5f;
+
+        int customerGamePlayStats(int numGamesPlayedToday, int numCreditsUsed, int todaysHighScore);
+        float customerPerformance(float avgScore, float avgCreditsUsed);
+        auto customerPersonalInfoOnFile(std::string customerName, bool customerisOver21, std::string customerAddress);
+    };    
 //3 things it can do:
     //1) create entertainment
     void createEntertainment();
