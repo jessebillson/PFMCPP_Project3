@@ -563,7 +563,7 @@ struct Keyboard
    //3) width of keyboard in inches (float)
     float widthOfKeyboardInInches = 11.75f;
    //4) amount of noise made per key press in dB (float)
-    float volumeOfKeyPressedInDb = 32.2;
+    float volumeOfKeyPressedInDb = 32.2f;
    //5) number of special keys (int)
     int numSpecialKeys = 13;
 //3 things it can do:
@@ -607,9 +607,9 @@ struct ComputerScreen
    //2) amount of brightness in nits (float)
     float amtOfBrightnessInNits = 1400.5f;
    //3) width of screen (float)
-    float widthOfLaptopScreenInInches = 11.97; 
+    float widthOfLaptopScreenInInches = 11.97f; 
    //4) aspect ratio (float)
-    float aspectRatio = 1.78;
+    float aspectRatio = 1.78f;
    //5) refresh rate in hz (int)
     int refreshRateInHz = 60;
 //3 things it can do:
