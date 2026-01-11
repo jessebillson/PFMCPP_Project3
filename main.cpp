@@ -541,7 +541,7 @@ struct Arcade
     };    
 
     void competitiveGamerProfile(Customer customer);
-    Customer newHighScore
+    Customer newHighScore;
 
 //3 things it can do:
     //1) create entertainment
@@ -672,15 +672,15 @@ struct Laptop
 //Thing 10) laptop
 //5 properties:
    //1) keyboard
-    int numKeyboards = 1;
+    Keyboard keyboard;
    //2) trackpad
-    int numTrackpads = 1;
+    TrackPad trackpad;
    //3) screen
-    int numScreens = 1;
+    ComputerScreen screen;
    //4) charger
-    int numChargers = 2;
+    ComputerCharger charger;
    //5) external hard drive
-    int numExternalDrives = 2;
+    ExternalHardDrive externalHardDrive;
 //3 things it can do:
    //1) store data
     float dataStoredInGb(float amountOfDataInGb);
