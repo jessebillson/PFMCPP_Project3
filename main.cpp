@@ -1051,7 +1051,7 @@ paste your code below
        //1) control computer navigation
         void controlComputerNavigation();
        //2) track physical movement when touched
-        float trackPadFingerPosition(float x, float y);
+        float trackPadChangeMousePosition(float x, float y);
        //3) scroll the screen 
         void scrollScreen();
     };
@@ -1122,7 +1122,7 @@ paste your code below
        //2) transfer data
         float transferData(int amountOfDataInGb);
        //3) use energy
-        float energyConsumption(float energyConsumedInJoules);
+        float useEnergy(float energyConsumedInJoules);
     };
 
     struct Laptop
