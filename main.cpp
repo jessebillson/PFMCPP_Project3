@@ -909,16 +909,16 @@ paste your code below
             int weightInLbs = 175;
             float mileRunTime = 6.57f;   
 
-            int membershipStatus(bool isMember, int numMonthsAsMember);
-            bool usesMembershipPerks(bool showerAccess, bool classes, bool hasPersonalTrainer);
-            void workoutPreference(int numTimesPerWeekWeights, int numTimesPerWeekCardio, int numTimesPerWeekYoga);
+            bool checkValidMembershipStatus(bool isMember, bool paidCurrentMonth);
+            int deadLift(int weightInLbs, int numReps);
+            int benchPress(int weightInLbs, int numReps);
         };
 
         void personalTrainer(Human customer);
         Human strengthTraining;
     //3 things it can do:
-        //1) make money
-        float moneyEarned(float discountedSalePrice);
+        //1) charge customers
+        float chargeCustomers(float discountedSalePrice);
         //2) burn calories
         float burnCalories();
         //3) build muscle
@@ -941,9 +941,9 @@ paste your code below
         int numDoors = 4;
     //3 things it can do:
         //1) sell food
-        float dailyFoodSales(float totalDailyFoodSales);
+        float sellFood(float totalDailyFoodSales);
         //2) sell alcohol
-        float dailyAlcoholSales(float totalDailyAlcoholSales);
+        float sellAlcohol(float totalDailyAlcoholSales);
         //3) give free samples
         void giveFreeSamples();
     };
@@ -964,7 +964,7 @@ paste your code below
         std::string location = "Orange County Fairgrounds";
     //3 things it can do:
         //1) entertain a large group of people
-        void entertainLargeGroup();
+        void entertainLargeGroup(int numAttendees, int numComplaints);
         //2) create memories
         void createMemories();
         //3) showcase uncommon animals
@@ -1002,10 +1002,10 @@ paste your code below
         Customer newHighScore;
 
     //3 things it can do:
-        //1) create entertainment
-        void createEntertainment();
-        //2) sell food and beverage
-        float foodAndBeverageSales(float dailyFoodAndBeverageSales);
+        //1) create hours of entertainment
+        float TimeSpentGaming();
+        //2) sell refreshments
+        float sellRefreshments(float dailyFoodAndBeverageSales);
         //3) cause motion sickness
         void causeMotionSickness();
     };
@@ -1030,7 +1030,7 @@ paste your code below
        //2) raise computer volume
         float raiseVolumeAmountInDb(float volumeInDb);    
        //3) raise and dim the screen brightnes
-        float screenBrightness(float amtInNits);
+        float changeScreenBrightness(float amtInNits);
     };
 
     struct TrackPad
@@ -1051,7 +1051,7 @@ paste your code below
        //1) control computer navigation
         void controlComputerNavigation();
        //2) track physical movement when touched
-        float trackPadPosition(float x, float y);
+        float trackPadFingerPosition(float x, float y);
        //3) scroll the screen 
         void scrollScreen();
     };
@@ -1141,7 +1141,7 @@ paste your code below
         ExternalHardDrive externalHardDrive;
     //3 things it can do:
        //1) store data
-        float dataStoredInGb(float amountOfDataInGb);
+        float storeDataInGb(float amountOfDataInGb);
        //2) run applications
         void runApplications();
        //3) connect to the internet
