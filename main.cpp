@@ -993,9 +993,9 @@ paste your code below
             int favoriteGameHighScore = 999999;
             float customerAvailableCredits = 652.5f;
 
-            int customerGamePlayStats(int numGamesPlayedToday, int numCreditsUsed, int todaysHighScore);
-            float customerPerformance(float avgScore, float avgCreditsUsed);
-            auto customerPersonalInfoOnFile(std::string customerName, bool customerisOver21, std::string customerAddress);
+            int playPacMan(int numGamesPlayedToday, int todaysHighScore);
+            int playGalaga(int numGamesPlayedToday, int todaysHighScore);
+            int playAirHockey(int numGamesWon, int numGamesLost);
         };    
 
         void competitiveGamerProfile(Customer customer);
