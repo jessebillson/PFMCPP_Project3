@@ -1002,7 +1002,7 @@ paste your code below
         Customer newHighScore;
 
     //3 things it can do:
-        //1) create hours of entertainment
+        //1) time spent gaming
         float TimeSpentGaming();
         //2) sell refreshments
         float sellRefreshments(float dailyFoodAndBeverageSales);
@@ -1051,7 +1051,7 @@ paste your code below
        //1) control computer navigation
         void controlComputerNavigation();
        //2) track physical movement when touched
-        float trackPadChangeMousePosition(float x, float y);
+        float trackPhysicalMovementWhenTouched(float x, float y);
        //3) scroll the screen 
         void scrollScreen();
     };
