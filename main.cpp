@@ -83,51 +83,55 @@ Main Object: Car Interior
         Name 4 nouns you'll find on the [Sub Object]
             1) paddle shifters
             2) 'cruise control' controls
-            3) 
-            4) 
+            3) horn button
+            4) phone answering button
         Name 2 actions that the [Sub Object] can do:
-            1) adjust cruise control settings.
-            2)
+            1) change the gear of the car
+            2) adjust cruise control settings.
+            3) alert others of your presence
+            2) turn the car
         
     Sub Object: Instrument Cluster
         Name 4 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
-            4)
+            1) tachometer
+            2) speedometer
+            3) odometer
+            4) check engine light
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) display the RPM of the engine
+            2) diplay the speed of travel
+            3) display how many miles have been driven
+            4) display when there is something wrong with the car
     
     Sub Object: Environment Controls
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) hazard light control
+            2) air conditioning controls
+            3) window defrost control
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) control the temperature of the car's interior
+            2) display to other drivers that the vehicle is stopped in a potentially unexpected manner
+            3) defrost a foggy window
 
     Sub Object: Infotainment System
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) radio volume control
+            2) time and date settings
+            3) wireless phone connection options
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) raise and lower the volume of the car stereo
+            2) display the correct time and date
+            3) allow hands free calling and app integration
 
     Sub Object: Seat 
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) position adjuster
+            2) seat belt
+            3) headrest
         Name 2 actions that the [Sub Object] can do:
-            1)
-            2)
+            1) adjust seating position
+            2) hold you in place
+            3) protect against injury
 */
 
 /*
@@ -195,54 +199,6 @@ Part 1b - Step 2: Assignment
         primitives.
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
-
-Thing 1)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 2)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 3)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 4)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
 */
 
 /*
@@ -336,18 +292,6 @@ Part 1c - Step 4: Assignment
 Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
-
-Thing 10)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
  */
 
  /*
@@ -433,66 +377,6 @@ example:
     If #10's first property was 'Engine', then `Thing 5)` will be `Engine`. 
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
-
-Thing 5)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 6)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 7)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 8)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 9)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
  */
 
 /*
@@ -544,12 +428,6 @@ MOVE THEM to the space below this block comment and put them in numerical order
     I only want to see the 10 UDTs written BELOW this block comment, in numerical order (1 - 10).
     simply CUT and PASTE them in the space provided below:
 */
-
-
-
-
-
-
 
 
 /*
@@ -1009,7 +887,266 @@ Part 1e - Step 19: Request a review
 /*
 paste your code below
 */
+    struct Gym
+    {
+    //Thing 1) gym
+    //5 properties: 
+        //1) number of employees (int)
+        int numEmployees = 12;
+        //2) amount of treadmills (int)
+        int numTreadmills = 10;
+        //3) number of daily classes (int)
+        int numDailyClasses = 16;
+        //4) number of clients (int)
+        int numClient = 116;
+        //5) range of weights (int)
+        int rangeOfWeight = 100; //I actually can't think of a way to represent this in one line. so the range is 100.
+        struct Human
+        {
+            std::string humanName = "Jesse";
+            bool isMale = true;
+            int age = 35;
+            int weightInLbs = 175;
+            float mileRunTime = 6.57f;   
 
+            bool checkValidMembershipStatus(bool isMember, bool paidCurrentMonth);
+            int deadLift(int weightInLbs, int numReps);
+            int benchPress(int weightInLbs, int numReps);
+        };
+
+        void personalTrainer(Human customer);
+        Human strengthTraining;
+    //3 things it can do:
+        //1) charge customers
+        float chargeCustomers(float discountedSalePrice);
+        //2) burn calories
+        float burnCalories();
+        //3) build muscle
+        void buildMuscle();
+    };
+
+    struct GroceryStore
+    {
+    //Thing 2) grocery store
+    //5 properties:
+        //1) amount of produce (float)
+        float amountOfProduceInLbs = 813.4f;
+        //2) number of registers (int)
+        float numRegisters = 12;
+        //3) number of carts (int)
+        int numCart = 70;
+        //4) number of employees (int)
+        int numEmployees = 50;
+        //5) number of doors (int)
+        int numDoors = 4;
+    //3 things it can do:
+        //1) sell food
+        float sellFood(float totalDailyFoodSales);
+        //2) sell alcohol
+        float sellAlcohol(float totalDailyAlcoholSales);
+        //3) give free samples
+        void giveFreeSamples();
+    };
+
+    struct CountyFair
+    {
+    //Thing 3) county fair
+    //5 properties:
+        //1) number of rides (int)
+        int numRides = 16;
+        //2) number of food vendors (int)
+        int numFoodVendors = 14;
+        //3) number of attendees (int)
+        int numAttendees = 2000;
+        //4) number of games (int)
+        int numGames = 30;
+        //5) location (std::string)
+        std::string location = "Orange County Fairgrounds";
+    //3 things it can do:
+        //1) entertain a large group of people
+        void entertainLargeGroup(int numAttendees, int numComplaints);
+        //2) create memories
+        void createMemories();
+        //3) showcase uncommon animals
+        void showcaseUncommonAnimals();
+    };
+
+    struct Arcade
+    {
+    //Thing 4) arcade
+    //5 properties:
+        //1) number of games (int)
+        int numGames = 33;
+        //2) number of credits paid per game (float)
+        float numCreditsToPlayGame = 7.5f;
+        //3) number of customers (int)
+        int numCustomers = 90;
+        //4) hours of operation (int)
+        int hoursOfOperation = 800; //military opening time. I couldn't think of a way to represent open and closing times in one line
+        //5) annual cost of wear and tear in USD (float)
+        float annualCostOfWearAndTear = 7658.79f;
+        struct Customer
+        {
+            int customerNumber = 1316425;
+            bool customerisOver21 = true;
+            std::string customerFavoriteGame = "Pac Man";
+            int favoriteGameHighScore = 999999;
+            float customerAvailableCredits = 652.5f;
+
+            int playPacMan(int numGamesPlayedToday, int todaysHighScore);
+            int playGalaga(int numGamesPlayedToday, int todaysHighScore);
+            int playAirHockey(int numGamesWon, int numGamesLost);
+        };    
+
+        void competitiveGamerProfile(Customer customer);
+        Customer newHighScore;
+
+    //3 things it can do:
+        //1) create hours of entertainment
+        float TimeSpentGaming();
+        //2) sell refreshments
+        float sellRefreshments(float dailyFoodAndBeverageSales);
+        //3) cause motion sickness
+        void causeMotionSickness();
+    };
+
+    struct Keyboard
+    {
+    //Thing 5) keyboard
+    //5 properties:
+       //1) number of keys (int)
+        int numKeys = 104;
+       //2) depth of keys in millimeters (float)
+        float depthOfKeysInMm = 1.09f;
+       //3) width of keyboard in inches (float)
+        float widthOfKeyboardInInches = 11.75f;
+       //4) amount of noise made per key press in dB (float)
+        float volumeOfKeyPressedInDb = 32.2f;
+       //5) number of special keys (int)
+        int numSpecialKeys = 13;
+    //3 things it can do:
+       //1) type letters
+        void typeLetters();
+       //2) raise computer volume
+        float raiseVolumeAmountInDb(float volumeInDb);    
+       //3) raise and dim the screen brightnes
+        float changeScreenBrightness(float amtInNits);
+    };
+
+    struct TrackPad
+    {
+    //Thing 6) trackpad
+    //5 properties:
+       //1) number of buttons (int)
+        int numButtons = 1;
+       //2) width of trackpad (float)
+        float widthOfTrackPadInInches = 3.9f;
+       //3) sensitivity of trackpad (double)
+        double trackPadSensitivityValue = 3.0089;
+       //4) color of trackpad (std::string)
+        std::string colorOfTrackpad = "Navy Blue";
+       //5) number of available "gesures" (int)
+        int numAvailableGestures = 7;
+    //3 things it can do:
+       //1) control computer navigation
+        void controlComputerNavigation();
+       //2) track physical movement when touched
+        float trackPadChangeMousePosition(float x, float y);
+       //3) scroll the screen 
+        void scrollScreen();
+    };
+
+    struct ComputerScreen
+    {
+    //Thing 7) screen
+    //5 properties:
+       //1) available visible screen space in inches (float)
+        float numAvailableScreenSpaceInInches = 13.6f;
+       //2) amount of brightness in nits (float)
+        float amtOfBrightnessInNits = 1400.5f;
+       //3) width of screen (float)
+        float widthOfLaptopScreenInInches = 11.97f; 
+       //4) aspect ratio (float)
+        float aspectRatio = 1.78f;
+       //5) refresh rate in hz (int)
+        int refreshRateInHz = 60;
+    //3 things it can do:
+       //1) display graphics
+        void displayGraphics();
+       //2) display text
+        void displayText();
+       //3) generate heat
+        float generateHeat(float amtOfDegreesInFahrenheit);
+    };
+
+    struct ComputerCharger
+    {
+    //Thing 8) charger
+    //5 properties:
+       //1) name of input type (std::string)
+        std::string magSafeCharger = "Mag Safe Charger";
+       //2) speed of charging (float)
+        float speedOfChargingInHours = 2.5f;
+       //3) input voltage (float)
+        float inputVoltageInVolts = 110.0f;
+       //4) length of cord (float)
+        float lengthOfChordInFeet = 5.5;
+       //5) amount of wattage required to run (float)
+        float amountOfWattage = 5.0f;
+    //3 things it can do:
+       //1) charge laptop
+        float chargeLaptop(float energyConsumedInJoules);
+       //2) charge phone
+        float chargePhone(float energyConsumedInJoules);
+       //3) explode
+        void explode(float splOfExplosionInDb);
+    };
+
+    struct ExternalHardDrive
+    {
+    //Thing 9) external hard drive
+    //5 properties:
+       //1) amount of storage in gigabytes(int)
+        int amountOfStorageInGb = 250;
+       //2) speed of data transfer in Mb per sec (float)
+        float speedOfDataTransferInMbps = 500.0f;
+       //3) physical size of drive (float)
+        float hardDrivePhysicalSize = 2.5f;
+       //4) amount of voltage needed to run (float)
+        float amtVoltageToRunHardDrive = 12.5;
+       //5) number of partitions (int)
+        int numPartitions = 3;
+    //3 things it can do:
+       //1) store data
+        float storeData(int amountOfDataInGb);
+       //2) transfer data
+        float transferData(int amountOfDataInGb);
+       //3) use energy
+        float useEnergy(float energyConsumedInJoules);
+    };
+
+    struct Laptop
+    {
+    //Thing 10) laptop
+    //5 properties:
+       //1) keyboard
+        Keyboard keyboard;
+       //2) trackpad
+        TrackPad trackpad;
+       //3) screen
+        ComputerScreen screen;
+       //4) charger
+        ComputerCharger charger;
+       //5) external hard drive
+        ExternalHardDrive externalHardDrive;
+    //3 things it can do:
+       //1) store data
+        float storeDataInGb(float amountOfDataInGb);
+       //2) run applications
+        void runApplications();
+       //3) connect to the internet
+        void connectToInternet();
+    };
 
 
 
